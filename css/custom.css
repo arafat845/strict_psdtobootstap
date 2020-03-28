@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+/* font-family: 'Lato', sans-serif; */
+body{
+	font-family: 'Lato', sans-serif;
+}
+h1{
+    font-size: 85px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
+h2{
+    font-size: 38px;
+}
+p{
+    font-size: 15px;
+}
+span{
+	display: inline-block;
+	text-shadow: 0 0 4px #dddddd5c;
+}
+span i{}
+video{
+	max-width: 100%;
+}
+nav{
+	background-color: #d9dbdc61;
+}
+.nav-link{
+	font-size: 15px;
+    font-weight: 600;
+    color: #2d3950 !important;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    padding: 0 20px;
+}
+.nav-link:hover{
+	color: #15A4FA !important;
+}
+.banner-content h6{
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 19px;
+}
+.banner-section{
+	background-image: url(../images/Strict-banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 108vh;
+	text-align: center;
+}
+.banner-content{
+	padding-top: 180px;
+}
+
+.banner-section strong{
+	display: block;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	color: #fff;
+	font-size: 25px;
+	animation-name: move;
+	animation-duration: 3s;
+	animation-fill-mode: backwards;
+	animation-iteration-count: infinite;
+}
+@keyframes move{
+	0%{
+		bottom: 50px;
+	}
+	50%{
+		bottom: 30px;
+		transform: scale(1.2);
+	}
+	100%{
+		bottom: 50px;
+	}
+}
+.banner-section span{
+    height: 2px;
+    display: block;
+    width: 100%;
+    background-color: #15A4FA;
+}
+.btn{
+	padding: 10px 25px;
+	color: #fff;
+	font-size: 18px;
+	border: 1px solid #15a4fa;
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+}
+.btn:hover{
+	background-color: #15a4fa;
+	color: #2d3950;
+}
+.design-section{}
+.heading-part{
+    text-align: center;
+    background-color: #d9dbdc61;
+}
+.heading-part h6{
+	color: #000000a6;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	font-size: 19px;
+} 
+.icon{
+	text-align: center;
+}
+.icon1:hover{
+	box-shadow: 0 0 10px #dddddd5c;
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+}
+.icon1 span{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5fc3ff+50,48baff+50 */
+	background: #5fc3ff; /* Old browsers */
+	background: -moz-linear-gradient(left,  #5fc3ff 50%, #48baff 50%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #5fc3ff 50%,#48baff 50%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #5fc3ff 50%,#48baff 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5fc3ff', endColorstr='#48baff',GradientType=1 ); /* IE6-9 */
+	font-size: 45px;
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	color: white;
+}
+.icon1 h3{
+	padding: 20px;
+	font-size: 22px;
+}
+.showcase-section{
+
+background-color: #d9dbdc61;
+}
+.showcase-heading{
+}
+.showcase-1{
+	position: relative;
+	margin-bottom: 30px;
+}
+.showcase-1::before{
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #15a4fa;
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition-duration: .4s;
+	transform: scale(.5);
+}
+.showcase-1:hover::before{
+	transform: scale(1);
+	opacity: 0.7;
+}
+.showcase-1 img{}
+.showcase-1 ul{
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	opacity: 0;
+	transition-duration: 0.4s;
+}
+.showcase-1 ul li{
+	text-align: center;
+	padding: 10px;
+}
+.showcase-1 ul li a{
+	display: block;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	color: #fff;
+	height: 35px;
+	width: 35px;
+	line-height: 32px;
+}
+.showcase-1:hover ul{
+	opacity: 1;
+}
+
+.contact-section{
+	position: relative;
+}
+.contact-section::before{
+	content:"";
+	background-color: #2d3950;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 0.6;
+}
+.contact-form{
+	left: 50%;
+	position: absolute;
+	bottom: 40%;
+	transform: translate(-50%, 40%);
+}
+footer strong{
+	display: block;
+	font-weight: 400;
+	font-size: 14px;
+}
+.social-band li span{
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #15a4fa;
+	color: #fff;
+	font-size: 16px;
+}
+.social-band li span:hover{
+	background-color: #01588cc2;
+}
+.btn-sub{
+	padding: 10px 50px;
+	border-radius: 5px;
+	color: #fff;
+	border: 1px solid #fff;
+	background-color: transparent;
+	transition-duration: 0.3s;
+}
+.btn-sub:hover {
+	background-color: #15a4fa;
+	color: #fff;
+}
+
+.bg-trap{
+	background-color: transparent !important;
+}
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
